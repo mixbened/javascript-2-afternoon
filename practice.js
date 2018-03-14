@@ -15,8 +15,12 @@
 */
 
 //Code here
+var me = {
+  name: 'Ben',
+  age: 21
+}
 
-
+alert(me.name);
 
 ////////// PROBLEM 2 //////////
 
@@ -26,6 +30,14 @@
 */
 
 //Code here
+var favoriteThings = {
+  band: 'Greenday',
+  food: 'Chicken Nuggets',
+  person: 'Huckleberry Finn',
+  book: 'Harry Potter',
+  movie: 'LOTR',
+  holiday: 'Scandinavia'
+}
 
 
 
@@ -34,7 +46,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Audi';
+favoriteThings.brand = 'Nike';
 
 
 /*
@@ -42,7 +55,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 ////////// PROBLEM 3 //////////
@@ -56,6 +70,12 @@
 */
 
 //Code here
+var backPack = {};
+var item = 'firstPocket';
+backPack.firstPocket = item;
+backPack.firstPocket = 'chapstick';
+backPack['color'] = 'green';
+
 
 
 
@@ -64,7 +84,7 @@
 */
 
 //Code here
-
+alert(backPack);
 
 
 /*
@@ -74,7 +94,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +117,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -109,7 +130,7 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection = {};
 
 
 /*
@@ -118,7 +139,11 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello = function(){
+  alert('hello');
+}
 
+methodCollection.logHello = () => console.log('hello');
 
 
 /*
@@ -126,7 +151,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -137,7 +163,13 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson(name, birthday, ssn) {
+  return {
+    name,
+    birthday,
+    ssn,
+  }
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -148,5 +180,11 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  return {
+    cardNumber,
+    expirationDate,
+    securityCode
+  }
+}
 
